@@ -1,56 +1,94 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌐 My Responsive Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
 <body>
 
 <!-- Header -->
 <header>
-    <h1>🌐 My Responsive Website</h1>
-    <p>HTML | CSS | JavaScript</p>
+    <div class="container">
+        <h1>🌐 My Responsive Website</h1>
+        <p>HTML | CSS | JavaScript</p>
+    </div>
 </header>
 
 <!-- Navigation -->
 <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
+    <div class="container">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+    </div>
 </nav>
 
 <!-- Home Section -->
 <section id="home" class="card">
-    <h2>Welcome</h2>
-    <p>This is a responsive and interactive website created for Web Technology assignment.</p>
+    <div class="container">
+        <h2>Welcome</h2>
+        <p>This is a responsive and interactive website created for Web Technology assignment.</p>
 
-    <button onclick="showMessage()">
-        Click Me
-    </button>
+        <button onclick="showMessage()" class="btn-primary">
+            Click Me
+        </button>
+    </div>
 </section>
 
 <!-- About Section -->
 <section id="about" class="card">
-    <h2>About</h2>
-    <p>
-        This website demonstrates responsive design using CSS media queries and
-        interactivity using JavaScript event handling.
-    </p>
+    <div class="container">
+        <h2>About</h2>
+        <p>
+            This website demonstrates responsive design using CSS media queries and
+            interactivity using JavaScript event handling. Built with modern web technologies
+            for optimal user experience across all devices.
+        </p>
+        <div class="features">
+            <div class="feature">
+                <h3>📱 Responsive</h3>
+                <p>Adapts to all screen sizes</p>
+            </div>
+            <div class="feature">
+                <h3>⚡ Interactive</h3>
+                <p>JavaScript powered features</p>
+            </div>
+            <div class="feature">
+                <h3>🎨 Modern</h3>
+                <p>Clean and beautiful design</p>
+            </div>
+        </div>
+    </div>
 </section>
 
 <!-- Contact Section -->
 <section id="contact" class="card">
-    <h2>Contact</h2>
+    <div class="container">
+        <h2>Contact</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
 
-    <input type="text" id="name" placeholder="Enter your name">
-    <br><br>
+            <div class="form-group">
+                <textarea id="message" placeholder="Enter your message" required></textarea>
+            </div>
 
-    <textarea id="message" placeholder="Enter your message"></textarea>
-    <br><br>
-
-    <button onclick="sendMessage()">
-        Send Message
-    </button>
+            <button type="submit" class="btn-primary">
+                Send Message
+            </button>
+        </form>
+    </div>
 </section>
 
 <!-- Footer -->
 <footer>
-    <p>© 2026 Responsive Website | Web Technology Lab</p>
+    <div class="container">
+        <p>© 2026 Responsive Website | Web Technology Lab</p>
+    </div>
 </footer>
 
 <!-- JavaScript -->
